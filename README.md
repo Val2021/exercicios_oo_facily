@@ -1,5 +1,5 @@
 
-# 🚀 Exercício desacoplamento de classe
+# 🚀 Lista de exercícios
 
 
 ## Contribuidores:
