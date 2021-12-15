@@ -3,7 +3,7 @@ Faça um Programa que leia 20 números inteiros e armazene-os num vetor. Armazen
 vetor PAR e os números ÍMPARES no vetor ímpar. Imprima os três vetores
 """
 
-N_INT = 20
+N_INT = 5
 
 class App: 
 
@@ -55,6 +55,6 @@ class Odd:
     def get_vector(self):
         return self._odd
 
-
-aplication = App()
-aplication.execute()
+if __name__ == "__main__":
+    aplication = App()
+    aplication.execute()

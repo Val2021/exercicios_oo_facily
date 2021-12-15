@@ -14,6 +14,9 @@ class Data:
         self._ano = ano
         self.valida_ano()
 
+    def __str__(self):
+        return f"{self._dia}/{self._mes}/{self._ano}"
+
     @property
     def dia(self):
         return self._dia
@@ -41,6 +44,6 @@ class Data:
         
    
             
-app = Data(4,14,2021)
+# app = Data(4,11,2021)
           
         

@@ -23,12 +23,10 @@ class Aluno:
         self.list_nota = []
     
 
-    def inserir_notas(self):
+    def inserir_notas(self, nota):
 
-        for i in range(self.qtd_notas):
-            nota = int(input('> Informe a nota: '))
-            nota = Nota(nota)
-            self.list_nota.append(nota)
+        nota = Nota(nota)
+        self.list_nota.append(nota)
         
     def get_media(self):
         return sum([nota.get_nota() for nota in self.list_nota]) / self.qtd_notas
@@ -40,11 +38,12 @@ class Aluno:
             list_nota += " \n " + str(nota.get_nota())
         return f"As notas lidas são {list_nota} e a média é {str(self.get_media())} "
 
+if __name__ == "__main__":
 
-aluno = Aluno(4)
-aluno.inserir_notas()
-print(aluno)
-    
+    aluno = Aluno(4)
+    aluno.inserir_notas()
+    print(aluno)
+        
     
         
        

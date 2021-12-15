@@ -35,9 +35,10 @@ class Carro:
     def adicionarGasolina(self,combustivel):
         self.combustivel += combustivel
         return combustivel
-
-go = Carro()
-go.obterGasolina(10)
-go.adicionarGasolina(10)
-go.andar()
+        
+if __name__ == "__main__":
+    go = Carro()
+    go.obterGasolina(10)
+    go.adicionarGasolina(10)
+    go.andar()
     
